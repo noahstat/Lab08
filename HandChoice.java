@@ -55,7 +55,7 @@ public enum HandChoice
     public HandChoice winsAgainst()
     {
     	//I don't know if there is a variable to use so I just did this
-    	return CHOICE_MAP.get(CHOICE_MAP);
+    	return CHOICE_MAP.get(HandChoice.PAPER);
     	
     }
 
