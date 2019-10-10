@@ -1,3 +1,5 @@
+import java.util.LinkedHashMap;
+
 /**
  * Lab 
  *
@@ -19,7 +21,7 @@ public class RPSArenaTest {
      */
     public static void initialize() throws AssertException
     {
-    	// TODO: implement.
+    	arena = new RPSArena();
     }
     
     /**
