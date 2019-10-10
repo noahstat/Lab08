@@ -19,7 +19,13 @@ public class ContestantInfoTest
      */
     public static void initialize() throws AssertException
     {
-    	// TODO: implement.
+    	info = new ContestantInfo(Region.NORTH, HandChoice.PAPER);
+    	boolean worked = false;
+    	if(info.getRegion().equals(Region.NORTH) && info.getChoice().equals(HandChoice.PAPER))
+    	{
+    		worked = true;
+    	}
+    	Assert.assertEquals(true, worked);
     }
 
     /**
@@ -27,7 +33,13 @@ public class ContestantInfoTest
      */
     public void contestantInfoConstructorTest() throws AssertException
     {
-    	// TODO: implement.
+    	info = new ContestantInfo(Region.NORTH, HandChoice.PAPER);
+    	boolean worked = false;
+    	if(info.getRegion().equals(Region.NORTH) && info.getChoice().equals(HandChoice.PAPER))
+    	{
+    		worked = true;
+    	}
+    	Assert.assertEquals(true, worked);
     }
 
     /**
@@ -35,6 +47,9 @@ public class ContestantInfoTest
      */
     public void contestantInfoToStringTest() throws AssertException
     {
-    	// TODO: implement.
+    	info = new ContestantInfo(Region.NORTH, HandChoice.PAPER);
+    	String expected = "contestant from north throwing paper";
+    	String actual = info.toString();
+    	Assert.assertEquals(expected, actual);
     }
 }
