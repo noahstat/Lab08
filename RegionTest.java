@@ -14,6 +14,6 @@ public class RegionTest
      */
     public void regionToStringTest() throws AssertException
     {
-    	// TODO: implement.
+    	Assert.assertEquals("north", Region.NORTH.toString());
     }
 }
