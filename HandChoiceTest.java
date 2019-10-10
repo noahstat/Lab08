@@ -13,9 +13,9 @@ public class HandChoiceTest
      * Tests that the enum returns the expected HandChoice
      * as being weak against the PAPER type.
      */
-    public void paperEffectiveAgainstTest() throws AssertException
+    public void paperWinsAgainstTest() throws AssertException
     {
-    	// TODO: implement.
+    	Assert.assertEquals(HandChoice.ROCK, HandChoice.PAPER.winsAgainst());
     }
 
     /**
@@ -24,7 +24,7 @@ public class HandChoiceTest
      */
     public void rockEffectiveAgainstTest() throws AssertException
     {
-    	// TODO: implement.
+    	Assert.assertEquals(HandChoice.SCISSORS, HandChoice.ROCK.winsAgainst());
     }
 
     /**
@@ -33,7 +33,7 @@ public class HandChoiceTest
      */
     public void scissorsEffectiveAgainstTest() throws AssertException
     {
-    	// TODO: implement.
+    	Assert.assertEquals(HandChoice.PAPER, HandChoice.SCISSORS.winsAgainst());
     }
 
     /**
@@ -41,6 +41,6 @@ public class HandChoiceTest
      */
     public void handChoiceToStringTest() throws AssertException
     {
-    	// TODO: implement.
+    	Assert.assertEquals("rock", HandChoice.ROCK.toString());
     }
 }
