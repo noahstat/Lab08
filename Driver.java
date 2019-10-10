@@ -90,7 +90,7 @@ public class Driver
                     contestantChoice1 = br.readLine().toUpperCase();
                     contestant1 = arena.getContestant(contestantChoice1);
                 }
-
+                
                 System.out.printf("You choose %s.\n", contestant1);
                 
                 // List the Contestants that the user can choose from.
