@@ -1,5 +1,3 @@
-import static org.junit.Assert.*;
-
 /**
  * Lab 8
  *
@@ -17,7 +15,7 @@ public class ContestantTest
 	
     public void contestantGeorgeGetRegionTest() throws AssertException
     {
-    	assertEquals(Region.NORTH, Contestant.GEORGE.getRegion());
+    	Assert.assertEquals(Region.NORTH, Contestant.GEORGE.getRegion());
     }
     
     /**
